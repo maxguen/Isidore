@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../Schema/tei_minimal.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Lettres d'Isidore de Péluse : livre 1 lettre 1</title>
+            <principal>
+               <persName><forename>Christian</forename>
+                  <surname>Raschle</surname>
+               </persName>
+            </principal>
+            <respStmt>
+               <persName>
+                  <forename>Maxime</forename>
+                  <surname>Guénette</surname>
+               </persName>
+               <resp>Encodage en XML/TEI</resp>
+            </respStmt>
+            <respStmt>
+               <persName>
+                  <forename>Max-Alain</forename>
+                  <surname>Ahikp</surname>
+               </persName>
+               <resp>Transcription du texte grec</resp>
+            </respStmt>
+            <respStmt>
+               <persName>
+                  <forename>Emmanuel</forename>
+                  <surname>Château-Dutier</surname>
+               </persName>
+               <resp>Conseil à l'édition et la modélisation TEI</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centre d'études classiques, Université de Montréal</publisher>
+            <address>
+               <addrLine>3744 rue Jean-Brillant, Montréal</addrLine>
+            </address>
+            <date from="2024-12"/>
+            <!-- sujet à changement -->
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier/>
+               <msContents>
+                  <summary>Corpus de 2000 lettres d'Isidore de Péluse (v.355–v.435/440 EC),
+                     professeur de rhétorique puis prêtre et moine dans la région du delta du Nil.
+                     Il produit une abondante correspondante avec son entourage, souvent de courts
+                     billets en réponse à une question précise ou des conseils de « directeur de
+                     conscience », mais aussi des lettres plus longues aux allures de petits traités
+                     sur des questions philosophiques ou exégétiques.</summary>
+                  <textLang mainLang="grc" otherLangs="la">Édition des lettres en grec ancien avec
+                     des traductions et commentaires en latin.</textLang>
+                  <msItem>
+                     <docTitle>
+                        <titlePart type="main" xml:lang="grc">ΙΣΙΔΩΡΟΥ, ΤΟΥ ΠΗΛΟΥΣΙΩΤΟΥ,</titlePart>
+                        <titlePart type="sub" xml:lang="grc">ΕΠΙΣΤΟΛΩΝ ΒΙΒΛΙΑ ΠΕΝΤΕ.</titlePart>
+                        <titlePart type="main" xml:lang="la">SANCTI ISIDORI, PELUSIOTAE,</titlePart>
+                        <titlePart type="sub" xml:lang="la">EPISTOLARUM LIBRI QUINQUE.</titlePart>
+                     </docTitle>
+                     <docAuthor>
+                        <persName>
+                           <forename>Isidore</forename>
+                           <genName>de</genName>
+                           <placeName>Péluse</placeName>
+                        </persName>
+                     </docAuthor>
+                     <docImprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>Garnier Fratres et J.-P. Migne Successores</publisher>
+                     </docImprint>
+                     <docDate when="1864">1864</docDate>
+                     <editor ref="#editeur1">Jacques-Paul Migne</editor>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="editeur1" role="editeur">
+                  <persName>
+                     <forename>Jacques-Paul</forename>
+                     <surname>Migne</surname>
+                  </persName>
+                  <note>Éditeur du texte grec provenant de la Patrologia Graeca 78</note>
+                  <gender>homme</gender>
+               </person>
+               <person xml:id="traducteurFr1" role="traducteur">
+                  <persName>
+                     <forename>Prénom</forename>
+                     <surname>Nom</surname>
+                  </persName>
+                  <note>Traducteur du texte français</note>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Description du projet</p>
+         </projectDesc>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body xml:lang="grc">
+         <div>
+            <head n="Αʹ" xml:id="cts" ref="Liste/persons.xml#neilos">ΝΕΙΛῼ ΜΟΝΑΧῼ</head>
+            <!-- utiliser label au lieu de num --><!-- enlever les lb -->
+            <head>Titre si dispo</head>
+            <p>Οἱ μὲν ἅγιοι τῆς μοναχικής φιλοσοφίας κορυφαίοι<lb/>καὶ ἡγεμόνες, ἐκ τῶν ἄθλων καὶ
+               ἀγώνων ὧν ἐτέλε<lb break="no"/>σαν, καὶ τὰς προσηγορίας ἁρμοδίας τοῖς
+               πράγμασι<pb/><lb/>πρὸς νουθεσίαν ἡμῶν καὶ μάθησιν ἔθεντο, ἀποταγήν<lb/>τὴν τῆς ὕλης
+               ἀναχώρησιν, καὶ ὑποταγὴν τὴν εὐ<lb break="no"/>πείθειαν καλέσαντες. Καὶ οἱ μὲν φύσιν
+               μόνην ἔσχου<lb/>διδάσκαλον· ἡμεῖς δὲ καὶ τὴν ἐκείνων πρᾶξιν ἀνά<lb break="no"
+               />γραπτον έχοντες, μικρὰ τῆς ἐργασίας φροντίζομεν.<lb/>Χρὴ τοίνυν τὴν μὲν ἀποταγὴν
+               λήθην εἶναι προκα<lb break="no"/>τασχούσης γνώμης, καὶ ἄρνησιν συνηθείας· τὴν
+               δὲ<lb/>ὑπακοὴν, νέκρωσιν καὶ φθορὰν τῶν ἐπὶ τῆς γῆς<lb/>μελῶν, καθώς γέγραπται<ref
+                  type="note" target="#n01">1</ref>.</p>
+
+         </div>
+         <div type="traduction" xml:lang="fr">
+            <head><num type="lettre" value="1">1</num>À <persName ref="Liste/persons.xml#neilos"
+                  >Neilos, moine</persName></head>
+            <p>Le texte en français</p>
+         </div>
+      </body>
+      <back>
+         <div type="commentaires">
+            <head>Commentaires</head>
+            <div type="commentaireHistorique">
+               <head>Historique</head>
+               <p>Commentaire ici</p>
+            </div>
+            <div type="patristique">
+               <head>Patristique</head>
+               <p>Commentaire ici</p>
+            </div>
+            <div type="littéraire">
+               <head>Littéraire</head>
+               <p>Commentaire ici</p>
+            </div>
+         </div>
+         <div type="notes">
+            <head>Notes</head>
+            <note xml:id="n01">
+               <p>du blabla</p>
+            </note>
+         </div>
+         <div type="biblio">
+            <head>Bibliographie</head>
+            <listBibl>
+               <bibl>
+                  <ref target="Liste/biblio.xml#maref"/>
+               </bibl>
+            </listBibl>
+         </div>
+      </back>
+   </text>
+</TEI>
