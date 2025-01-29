@@ -38,8 +38,7 @@
             Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is
             generally appropriate for usages which treat TEI content as data or documentation. The
             BSD-2 licence is generally appropriate for usage of TEI content in a software
-            environment. For further information or clarification, please contact the <ref
-              target="mailto:info@tei-c.org">TEI Consortium</ref>. </p>
+            environment. For further information or clarification, please contact the <ref target="mailto:info@tei-c.org">TEI Consortium</ref>. </p>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -53,7 +52,7 @@
           <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
         </application>
       </appInfo>
-    </encodingDesc>
+    <appInfo><application ident="RomaJS" version="1.1.2" when="2024-12-20T22:16:32.209Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -80,26 +79,22 @@
       <schemaSpec ident="isidore" start="TEI" prefix="tei_" targetLang="en" docLang="en">
 
         <!-- required minimal header elements -->
-        <moduleRef key="header"
-          include="teiHeader fileDesc titleStmt publicationStmt sourceDesc idno quotation principal projectDesc seriesStmt encodingDesc normalization profileDesc"/>
+        <moduleRef key="header" include="teiHeader fileDesc titleStmt publicationStmt sourceDesc idno quotation principal projectDesc seriesStmt encodingDesc normalization profileDesc"/>
 
         <!-- required core elements (p and title for use in titleStmt) -->
-        <moduleRef key="core"
-          include="p title head add choice corr date del editor expan foreign hi lb name orig quote num pb note ref respStmt resp publisher address addrLine author bibl pubPlace textLang listBibl"/>
+        <moduleRef key="core" include="p title head add choice corr date del editor expan foreign hi lb name orig quote num pb note ref respStmt resp publisher address addrLine author bibl pubPlace textLang listBibl graphic teiCorpus biblStruct imprint monogr analytic"/>
 
         <!-- required textstructure elements (TEI, text, and body) -->
-        <moduleRef key="textstructure"
-          include="TEI text body front div back docAuthor docImprint docDate docTitle titlePart docEdition"/>
+        <moduleRef key="textstructure" include="TEI text body front div back docAuthor docImprint docDate docTitle titlePart docEdition group"/>
 
         <!-- required module tei instantiates lots of classes used for further expansion of this odd -->
         <moduleRef key="tei"/>
 
 
-        <moduleRef key="namesdates"
-          include="country forename gender geogName persName placeName occupation orgName personGrp surname genName listPerson person roleName"/>
+        <moduleRef key="namesdates" include="country forename gender geogName persName placeName occupation orgName personGrp surname genName listPerson person roleName listPlace place"/>
         <moduleRef key="msdescription" include="msDesc msIdentifier msContents msItem summary"/>
         <moduleRef key="corpus" include="particDesc"/>
-      </schemaSpec>
+      <moduleRef key="transcr" include="facsimile surface"/><moduleRef key="textcrit" include="listWit witness"/></schemaSpec>
     </body>
   </text>
 </TEI>

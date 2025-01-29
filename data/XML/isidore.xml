@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../Schema/isidore.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Lettres d'Isidore de Péluse</title>
+            <principal>
+               <persName><forename>Christian</forename>
+                  <surname>Raschle</surname>
+               </persName>
+            </principal>
+            <respStmt>
+               <persName>
+                  <forename>Maxime</forename>
+                  <surname>Guénette</surname>
+               </persName>
+               <resp>Encodage en XML/TEI</resp>
+            </respStmt>
+            <respStmt>
+               <persName>
+                  <forename>Max-Alain</forename>
+                  <surname>Ahikp</surname>
+               </persName>
+               <resp>Transcription du texte grec</resp>
+            </respStmt>
+            <respStmt>
+               <persName>
+                  <forename>Christophe</forename>
+                  <surname>Turcotte-Richard</surname>
+               </persName>
+               <resp>Transcription du texte grec</resp>
+            </respStmt>
+            <respStmt>
+               <persName>
+                  <forename>Emmanuel</forename>
+                  <surname>Château-Dutier</surname>
+               </persName>
+               <resp>Conseil à l'édition et la modélisation TEI</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Centre d'études classiques, Université de Montréal</publisher>
+            <address>
+               <addrLine>3744 rue Jean-Brillant</addrLine>
+               <addrLine><placeName>Montréal</placeName></addrLine>
+               <addrLine>H3T 1N8</addrLine>
+               <addrLine><country>Canada</country></addrLine>
+            </address>
+            <date from="2024-12"/>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness>
+                  <biblStruct>
+                     <monogr>
+                        <author>
+                           <persName>
+                              <forename>Isidore</forename>
+                              <genName>de</genName>
+                              <placeName>Péluse</placeName>
+                           </persName>
+                        </author>
+                        <editor>
+                           <persName>
+                              <forename>Jacques-Paul</forename>
+                              <surname>Migne</surname>
+                           </persName>
+                        </editor>
+                        <title type="main">ΙΣΙΔΩΡΟΥ, ΤΟΥ ΠΗΛΟΥΣΙΩΤΟΥ</title>
+                        <title type="sub">ΕΠΙΣΤΟΛΩΝ ΒΙΒΛΙΑ ΠΕΝΤΕ</title>
+                        <imprint>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Garnier Fratres et J.-P. Migne Successores</publisher>
+                           <date>1864</date>
+                        </imprint>
+                     </monogr>
+                  </biblStruct>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Corpus de 2000 lettres d'Isidore de Péluse (v.355–v.435/440 EC), professeur de
+               rhétorique puis prêtre et moine dans la région du delta du Nil. Il produit une
+               abondante correspondante avec son entourage, souvent de courts billets en réponse à
+               une question précise ou des conseils de « directeur de conscience », mais aussi des
+               lettres plus longues aux allures de petits traités sur des questions philosophiques
+               ou exégétiques.</p>
+         </projectDesc>
+      </encodingDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="i0001">
+         <graphic url="../images/isid_ep_0001a.png" type="uri"/>
+         <graphic url="../images/isid_ep_0001b.png" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0001"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="Αʹ" xml:id="cts1">ΝΕΙΛῼ ΜΟΝΑΧῼ</head>
+                  <p>Οἱ μὲν ἅγιοι τῆς μοναχικής φιλοσοφίας κορυφαίοι καὶ ἡγεμόνες, ἐκ τῶν ἄθλων καὶ
+                     ἀγώνων ὧν ἐτέλεσαν, καὶ τὰς προσηγορίας ἁρμοδίας τοῖς πράγμασι πρὸς νουθεσίαν
+                     ἡμῶν καὶ μάθησιν ἔθεντο, ἀποταγήν τὴν τῆς ὕλης ἀναχώρησιν, καὶ ὑποταγὴν τὴν
+                     εὐπείθειαν καλέσαντες. Καὶ οἱ μὲν φύσιν μόνην ἔσχου διδάσκαλον· ἡμεῖς δὲ καὶ
+                     τὴν ἐκείνων πρᾶξιν ἀνάγραπτον έχοντες, μικρὰ τῆς ἐργασίας φροντίζομεν. Χρὴ
+                     τοίνυν τὴν μὲν ἀποταγὴν λήθην εἶναι προκατασχούσης γνώμης, καὶ ἄρνησιν
+                     συνηθείας· τὴν δὲ ὑπακοὴν, νέκρωσιν καὶ φθορὰν τῶν ἐπὶ τῆς γῆς μελῶν, καθώς
+                        γέγραπται<ref type="note" target="#n01">1</ref>.</p>
+               </div>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div type="traduction" xml:lang="fr">
+                  <head><num type="lettre" value="1">1</num>À <persName
+                        ref="/index/persons.xml#neilos">Neilos, moine</persName></head>
+                  <p>Le texte en français</p>
+               </div>
+            </body>
+         </text>
+      </group>
+      <back>
+         <div>
+            <head>Notes</head>
+            <note xml:id="n01"/>
+         </div>
+         <div>
+            <listPerson>
+               <person/>
+            </listPerson>
+            <listPlace>
+               <place/>
+            </listPlace>
+            <listBibl>
+               <bibl/>
+            </listBibl>
+         </div>
+      </back>
+   </text>
+   <facsimile>
+      <surface xml:id="i0002">
+         <graphic url="../images/isid_ep_0002.png" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0002"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="Βʹ" xml:id="cts2">ΔΩΡΟΘΕῼ ΜΟΝΑΧῼ</head>
+                  <head type="title">Ἄνθρακες ἀνήφθησαν ἀπ' αὐτοῦ</head>
+                  <p>Ἄνθρακος ἀνήφθησαν ἀπ' αὐτοῦ, ἐκ τοῦ Θεοῦ δηλονότι οἱ ἅγιοι. Ἐπειδὴ γὰρ ὁ Θεὸς
+                     ἡμῶν πῦρ καταναλίσκον ἐστὶν, οἱ τὸν Θεὸν θεωροῦντες τῇ και θαρότητι, ἄνθρακες
+                     εἰκότως προσαγορεύονται, τῇ πρὸς αὐτὸν ἐνώσει πυρούμενοι, καὶ φωστῆρες ἐν κόσμῳ
+                     φαινόμενοι.</p>
+               </div>
+            </body>
+         </text>
+      </group>
+   </text>
+   <facsimile>
+      <surface xml:id="i0003">
+         <graphic url="../images/isid_ep_0003.jpg" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0003"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="Γʹ" xml:id="cts3">ΝΕΙΛΑΜΒΩΝΙ ΣΧΟΛΑΣΤΙΚῼ</head>
+                  <head type="title">Περὶ πρακτικῆς</head>
+                  <p>Πάνω σαφῶς παρὰ τῶν ἀρχαίων μαθών, ὅτι οὐ τὸ οἴεσθαι εἶναι, εἶναί τί ἐστι·
+                     πρᾶττε μᾶλλον, καὶ μὴ μόνον λέγε.</p>
+               </div>
+            </body>
+         </text>
+      </group>
+   </text>
+   <facsimile>
+      <surface xml:id="i0004">
+         <graphic url="../images/isid_ep_0004.jpg" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0004"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="Δʹ" xml:id="cts4">ΤΙΜΟΘΕῼ ΑΝΑΓΝΩΣΤῌ</head>
+                  <p>Περὶ ὧν μετέρχῃ ἄθλων, θαυμάσιε, πέπεισο, στάδιον ἡμῖν τὰ παρόντα προτίθεσθαι
+                     ἀόρατον, ἐν ᾧ θηρίοις οὐκ αἰσθητοῖς, ἀλλὰ νοητοῖς τοῖς πάθεσι προσπαλαίομεν.
+                     ἅπερ εἰ τῆς ἐν ἡμῖν ῥώμης κρατήσουσιν, οὐ μέχρι τοῦ σώματος οἴσουσι τὸν
+                     κίνδυνον, ἀλλ' αὐτῇ τῇ ψυχῇ τὸν θάνατον φέρουσιν. Εἰ δὲ κρατηθῶσι καὶ
+                     δραπετεύσουσι, στεφάνων καὶ ἀναῤῥήσεων μεγάλων τευξόμεθα· καὶ ἐνταῦθα μὲν
+                     πολλάκις, μετὰ ταῦτα δὲ πάντως. Ἐπειδὴ τὰ ἔπαθλα ὁ μέλλων αἰὼν ἐμπεπίστευσαι,
+                     ὡς οὗτος τὰ σκάμματα.</p>
+               </div>
+            </body>
+         </text>
+      </group>
+   </text>
+   <facsimile>
+      <surface xml:id="i0005">
+         <graphic url="../images/isid_ep_0005a.png" type="uri"/>
+         <graphic url="../images/isid_ep_0005b.png" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0005"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="Εʹ" xml:id="cts5">ΝΕΙΛῼ</head>
+                  <head type="title">Περὶ τῆς τροφῆς τοῦ Προδρόμου, καὶ περὶ ἀσκήσεως</head>
+                  <p>Εἰ οἱ θεῖοι χρησμοί σημαίνουσι τὴν ἀκρίβειαν, περιττή ή περίεργος ζήτησις τοῖς
+                     νουνεχῶς τούτους ἀναγινώσκουσιν. Εἰ τοίνυν καὶ βρώματα καὶ ἐσθή ματα τῆς κατὰ
+                     Θεὸν τελείας ἀσκήσεως ἐν Ἰωάννῃ τῷ Βαπτιστῇ ἐπαιδεύθημεν, θριξὶ μὲν, εἰ οἷόν
+                     τε, πρὸς σκέπην ἀρκεσθησόμεθα· ἀκρέμοσι δὲ βοτανῶν καὶ φύλλων πρὸς ὀλίγην
+                     τροφὴν καὶ δύναμιν καὶ ἀπέ- ριττον. Εἰ δὲ ταῦτα δι' ἀσθένειαν μείζονα, τύπος
+                     ἡμῖν ἔστω χρείας ἁπάσης καὶ διαίτης, καὶ τελειώ- σεως, ἡ τοῦ προεστῶτος
+                     δοκιμασία καὶ κέλευσις.</p>
+               </div>
+            </body>
+         </text>
+      </group>
+   </text>
+   <facsimile>
+      <surface xml:id="i0006">
+         <graphic url="../images/isid_ep_0006.png" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0006"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="ϛʹ" xml:id="cts6">ΟΥΡΣΕΝΟΥΦΙῼ</head>
+                  <head type="title">Εἰς τὸ, « Ποτήριον ἐν χειρὶ Κυρίου. »</head>
+                  <p>Τὸ ποτήριον ἐν χειρὶ Κυρίου οἴνου ἀκράτου πλη- ρες κεράσματος. Την δικαίαν
+                     σημαίνει ὁ θεῖος χρησμὸς ἀνταπόδοσιν, κιρνωμένην μὲν φιλανθρωπία πρὸς
+                     μεταμέλειαν τῶν χαιρόντων τοῖς ἁμαρτήμασιν · ἔκλινε γὰρ ἐκ τούτου εἰς τοῦτο, ἐκ
+                     τῆς φιλανθρωπίας δηλονότι εἰς τὴν χρεωστουμένην τοῖς πταίσμασι τιμωρίαν καὶ
+                     δικαίαν κρίσιν. ̓Αλλ' ἵνα μὴ παντελῶς φαντασθῶμεν (ἐπιλησμονεῖν) τῆς δίκης οἱ
+                     ράθυμοι, « Πλὴν ὁ τρυγίας αὐτοῦ οὐκἐξεκενώθη,» προστέθειται. Ὅτι εἰ τέλεον
+                     σωτηρίας καταφρονήσουσιν, εἰς ὕστερον τὴν δίκην οὐ λήσουσι. Πίονται γάρ, φησί,
+                     πάντες οἱ ἁμαρτωλοὶ τῆς γῆς, τὸ τῆς κρίσεως εἰκότως που τήριον.</p>
+               </div>
+            </body>
+         </text>
+      </group>
+   </text>
+   <facsimile>
+      <surface xml:id="i0007">
+         <graphic url="../images/isid_ep_0007.png" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0007"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="Ζʹ" xml:id="cts7">ΟΥΡΣΕΝΟΥΦΙῼ</head>
+                  <head type="title">Εἰς τὸ, « Ποτήριον ἐν χειρὶ Κυρίου. »</head>
+                  <p>Ἡ μὲν ἱερὰ τῶν Εὐαγγελίων πυκτὴ, ἡ εἰς τὸν Ἰωσὴφ τὴν γενεαλογίαν κατάγουσα ὲκ
+                     τοῦ Δαβὶδ ἕλκοντα τὴν συγγένειαν, ἠρκέσθη δι’ αὐτοῦ ἀποδεῖξαι καὶ τὴν Παρθένον
+                     τοῦ Δαβὶδ συμφυλέτιδα· τοῦ θείου νόμου τὰς συζυγίας αὐτοφύλους θεσπίζοντος
+                     γίνεσθαι. Ὁ δὲ τῶν οὐρανίων ὑποφήτης δογμάτων, ὁ μέγας ἀπόστολος Παῦλος,
+                     ἀναφανδὸν διασαφεῖ τὴν ἀλήθειαν, ὲκ τοῦ Ἰούδα μαρτυρῶν ἀνατεῖλαι τὸν Κύριον.
+                     Ταῦτα δὲ δριμύτερον ἐπιστάμενος, μῂ εἰρω- νεύου τὴν ὶπιρώτησιν. Οὐ γὰρ
+                     λανθάνεις θηρῶν τὴν εὐτέλειαν.</p>
+               </div>
+            </body>
+         </text>
+      </group>
+   </text>
+   <facsimile>
+      <surface xml:id="i0008">
+         <graphic url="../images/isid_ep_0008a.png" type="uri"/>
+         <graphic url="../images/isid_ep_0008b.png" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0008"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="Ηʹ" xml:id="cts8">ΟΥΡΣΕΝΟΥΦΙῼ</head>
+                  <head type="title">Ὁτι σύμμετρον χρὴ εἶναι τὸν ἀσκήσεως πόνον</head>
+                  <p>Ὥσπερ ὑπωπιασμοῦ δεῖται ἡ εὐεκτοῦσα σὰρξ, κατευνάζοντας τῶν παθῶν τὰ οἰδήματα·
+                     οὕτω καὶ βοηθείας χρήζει ἡ ἀσθενοῦσα καὶ κακώσει συμπί πτουσα ψυχή, ἵνα ταῖς
+                     θείαις ἐντολαῖς ὑπεραυγάζηται. Ἀμφοτέρων οὖν φροντιστέον. θατέρου γὰρ
+                     λείποντος, δυσχερής ἡ τελείωσις.</p>
+               </div>
+            </body>
+         </text>
+      </group>
+   </text>
+   <facsimile>
+      <surface xml:id="i0009">
+         <graphic url="../images/isid_ep_0009.png" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0009"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="Θʹ" xml:id="cts9">ΟΥΡΣΕΝΟΥΦΙῼ</head>
+                  <head type="title">Περὶ τῶν νυχτερινών φαντασιών.</head>
+                  <p>Δὲ νυχτεριναὶ φαντασίαι, ώς γέγραφας, φιλο- μαθέστατε, οὐ μόνον τῶν μεθημερινῶν
+                     εἰσι συντι χιῶν καὶ ὁμιλιῶν ἀπηχήματα, ἀλλὰ καὶ τῆς βαθύμου συνηθείας
+                     γεννήματα. Ὅτε γὰρ χάρῳ μέθης ὁ νοῦς συλληφθῇ, ὁρμητήριον γίνεται τῶν παθῶν.
+                     Ὅτε δὲ νήφει ἐγρηγόρως, καὶ τὸν Κύριον περιεζωσμένως καραδοκεί, οὔτε ὑπὸ
+                     γαστρός ἡττᾶται, οὔτε τῶν ἀπ' ἐκείνης παθῶν. Οὐδὲν γὰρ ἕτερόν ἐστι τὸ ἐξῶσθαι,
+                     ἤ τὸ δεδέσθαι τὴν ἰσχὺν τῆς ὀσφύος.</p>
+               </div>
+            </body>
+         </text>
+      </group>
+   </text>
+   <facsimile>
+      <surface xml:id="i0010">
+         <graphic url="../images/isid_ep_0010.png" type="uri"/>
+      </surface>
+   </facsimile>
+   <text>
+      <group>
+         <text>
+            <body>
+               <div facs="#i0010"/>
+            </body>
+         </text>
+         <text>
+            <body>
+               <div>
+                  <head n="Ιʹ" xml:id="cts10">ΕΥΣΕΒΙῼ ΠΡΕΣΒΥΤΕΡῼ </head>
+                  <head type="title">Ὅτι οὐδὲν μεῖζον ἀγάπης· ἐν ᾧ καὶ ἀποδείξεις ἔχει τὰς ἀδελφικὰς
+                     ζυγάδας.</head>
+                  <p>Οὐδὲν οὕτως θεῷ περισπούδαστον, ὡς ἀγάπη· δι' ἦν καὶ ἄνθρωπος γέγονε, καὶ μέχρι
+                     θανάτου ὑπήκοος. Διὰ τοῦτο γὰρ καὶ ἡ πρώτη κλήσις τῶν μαθητῶν αὐτοῦ, ἀδελφοὶ
+                     δύο γεγόνασιν, ἐνδειξαμένου διὰ τῶν προοιμίων εὐθὺς τοῦ πανσόφου Σωτῆρος, ὅτι
+                     πάντας τοὺς μαθητὰς αὐτοῦ ἀδελφικῶς συνάπτεσθαι βούλεται. 'Αγάπης τοίνυν μηδὲν
+                     ἡγώμεθα προτιμότερον, ἥπερ συνδεῖ πάντα, καὶ ἐν ὁμονοίᾳ συμφερούσῃ
+                     φυλάττει.</p>
+               </div>
+            </body>
+         </text>
+      </group>
+   </text>
+</TEI>
